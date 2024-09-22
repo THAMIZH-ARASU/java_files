@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>SignUp Page</title>
+  </head>
+  <body>
+    <h1>CREATE YOUR ACCOUNT</h1>
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+      <tr>
+        <td>NAME</td>
+        <td><input type="text" placeholder="Enter your Name:" id="n1" /></td>
+      </tr>
+      <tr>
+        <td>EMAIL</td>
+        <td>
+          <input type="text" placeholder="Enter your Email Address:" id="e1" />
+        </td>
+      </tr>
+      <tr>
+        <td>PASSWORD</td>
+        <td><input type="password" placeholder="Set a password:" id="p1" /></td>
+      </tr>
+      <tr>
+        <td>CONFIRM PASSWORD</td>
+        <td>
+          <input type="password" placeholder="Confirm your password:" id="p2" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="CREATE" onClick="create_account()" />
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript">
+      function create_account() {
+        var n = document.getElementById("n1").value;
+        var e = document.getElementById("e1").value;
+        var p = document.getElementById("p1").value;
+        var cp = document.getElementById("p2").value;
+
+        var letters = /^[A-Za-z]+$/;
+        var email =
+          /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})/;
+      }
+    </script>
+  </body>
+</html>
